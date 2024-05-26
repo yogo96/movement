@@ -6,7 +6,7 @@ public class Scaler : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed;
 
-    void Update()
+    private void Update()
     {
         transform.localScale += Vector3.one * _moveSpeed * Time.deltaTime;
     }

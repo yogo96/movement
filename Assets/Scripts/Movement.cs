@@ -6,9 +6,9 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed;
 
-    void Update()
+    private void Update()
     {
-        float distance = 1f * _moveSpeed * Time.deltaTime;
+        float distance = _moveSpeed * Time.deltaTime;
         transform.Translate(distance * Vector3.forward);
     }
 }
